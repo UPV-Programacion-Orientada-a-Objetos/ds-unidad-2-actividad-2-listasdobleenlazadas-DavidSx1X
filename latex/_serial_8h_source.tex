@@ -1,0 +1,41 @@
+\doxysection{Serial.\+h}
+\hypertarget{_serial_8h_source}{}\label{_serial_8h_source}\mbox{\hyperlink{_serial_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SERIAL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SERIAL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ Solo\ compilar\ este\ código\ en\ Windows}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <windows.h>}\ \textcolor{comment}{//\ API\ de\ Windows}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <stdio.h>}\ \ \ \textcolor{comment}{//\ Para\ printf}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}\ \ \textcolor{comment}{//\ Para\ std::cerr}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serial}{Serial}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ HANDLE\ hSerial;\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ connected;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_serial_a3667c3137f2df94716b5193f9fb736ab}{Serial}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_serial_a5b32c394c0ff923a4ef1c13cfb20a6ba}{\string~Serial}}();}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_af18d818c59ef6d7aebbf731a0f4f7683}{connect}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ portName,\ DWORD\ baudRate\ =\ 9600);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serial_a12c0a6ab60d9c90f78f5a0960b7b5adc}{disconnect}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_a57e12905d9c61c0c9524ef1634aebffc}{readLine}}(\textcolor{keywordtype}{char}*\ buffer,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bufferSize);}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ Stub\ para\ otros\ SO}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_serial_a3667c3137f2df94716b5193f9fb736ab}{Serial}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_serial_a3667c3137f2df94716b5193f9fb736ab}{Serial}}()\ \{\ std::cerr\ <<\ \textcolor{stringliteral}{"{}Serial\ no\ implementado\ para\ este\ SO."{}}\ <<\ std::endl;\ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_serial_a5b32c394c0ff923a4ef1c13cfb20a6ba}{\string~Serial}}()\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_af18d818c59ef6d7aebbf731a0f4f7683}{connect}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ portName,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ baudRate\ =\ 9600)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_serial_a12c0a6ab60d9c90f78f5a0960b7b5adc}{disconnect}}()\ \{\}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_serial_a57e12905d9c61c0c9524ef1634aebffc}{readLine}}(\textcolor{keywordtype}{char}*\ buffer,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ bufferSize)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_WIN32}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SERIAL\_H}}
+
+\end{DoxyCode}

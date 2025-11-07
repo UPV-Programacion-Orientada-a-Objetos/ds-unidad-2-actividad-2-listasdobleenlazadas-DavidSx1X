@@ -1,0 +1,3 @@
+C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build/CMakeFiles/Decoder.dir
+C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build/CMakeFiles/edit_cache.dir
+C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build/CMakeFiles/rebuild_cache.dir

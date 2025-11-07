@@ -1,0 +1,47 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include "{}Trama.\+h"{}}\newline
+{\ttfamily \#include "{}Lista\+De\+Carga.\+h"{}}\newline
+{\ttfamily \#include "{}Rotor\+De\+Mapeo.\+h"{}}\newline
+{\ttfamily \#include "{}Serial.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trama_base}{Trama\+Base}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{main_8cpp_a16826bfbee663578ce924dccef58ab40}{parsear\+Trama}} (char \texorpdfstring{$\ast$}{*}buffer)
+\begin{DoxyCompactList}\small\item\em Parsea una línea de texto del "{}serial"{} e instancia el objeto Trama correcto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a16826bfbee663578ce924dccef58ab40}\index{main.cpp@{main.cpp}!parsearTrama@{parsearTrama}}
+\index{parsearTrama@{parsearTrama}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{parsearTrama()}{parsearTrama()}}
+{\footnotesize\ttfamily \label{main_8cpp_a16826bfbee663578ce924dccef58ab40} 
+\mbox{\hyperlink{class_trama_base}{Trama\+Base}} \texorpdfstring{$\ast$}{*} parsear\+Trama (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+
+
+Parsea una línea de texto del "{}serial"{} e instancia el objeto Trama correcto. 
+
+Utiliza funciones de C-\/style (strtok, atoi) como se requiere, evitando std\+::string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Un buffer de caracteres {\itshape modificable} que contiene la línea (ej. "{}\+L,\+G"{} o "{}\+M,-\/2"{}). ¡\+Importante! strtok modifica el buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un puntero Trama\+Base\texorpdfstring{$\ast$}{*} a un nuevo objeto (\doxylink{class_trama_load}{Trama\+Load} o \doxylink{class_trama_map}{Trama\+Map}). El llamador es responsable de hacer "{}delete"{} a este puntero. Retorna NULL si la trama es inválida. 
+\end{DoxyReturn}

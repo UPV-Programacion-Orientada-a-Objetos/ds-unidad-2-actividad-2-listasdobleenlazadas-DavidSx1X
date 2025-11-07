@@ -1,0 +1,27 @@
+[
+{
+  "directory": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Decoder.dir/main.cpp.obj -c C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/main.cpp",
+  "file": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/main.cpp"
+},
+{
+  "directory": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Decoder.dir/Trama.cpp.obj -c C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/Trama.cpp",
+  "file": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/Trama.cpp"
+},
+{
+  "directory": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Decoder.dir/RotordeMapeo.cpp.obj -c C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/RotordeMapeo.cpp",
+  "file": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/RotordeMapeo.cpp"
+},
+{
+  "directory": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Decoder.dir/ListadeCarga.cpp.obj -c C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/ListadeCarga.cpp",
+  "file": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/ListadeCarga.cpp"
+},
+{
+  "directory": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/build",
+  "command": "C:/msys64/ucrt64/bin/g++.exe   -g -std=gnu++11 -o CMakeFiles/Decoder.dir/Serial.cpp.obj -c C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/Serial.cpp",
+  "file": "C:/Users/fddav/OneDrive/Escritorio/ds-unidad-2-actividad-2-listasdobleenlazadas-DavidSx1X/Serial.cpp"
+}
+]
